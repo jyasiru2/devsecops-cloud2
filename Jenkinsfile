@@ -1,12 +1,11 @@
 pipeline {
   agent any
   tools {
-          maven 'Maven 3.6.3'
-          jdk 'jdk13'
-      }
+    maven 'Maven 3.6.3'
+    jdk 'jdk13'
+  }
 
   stages {
-
     stage('git version') {
       steps {
         sh "git version"
